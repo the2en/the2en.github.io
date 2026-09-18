@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Seeun의 웹, 데이터, AI 프로젝트를 모아둔 the2en 포트폴리오입니다."
+    />
+    <meta name="theme-color" content="#f8a8cc" />
+    <meta property="og:title" content="Portfolio — the2en.log" />
+    <meta property="og:description" content="아이디어를 코드로 옮긴 프로젝트와 작업 기록." />
+    <meta property="og:type" content="website" />
+    <title>Portfolio — the2en.log</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="portfolio.js" defer></script>
+  </head>
+  <body class="portfolio-page">
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+    <div class="status-strip" aria-label="사이트 상태">
+      <span><i class="status-light"></i> ONLINE</span>
+      <span class="status-marquee">PORTFOLIO DIRECTORY · SELECTED WORKS ✦</span>
+      <span id="live-clock">00:00 KST</span>
+    </div>
+
+    <header class="site-header portfolio-header">
+      <a class="brand" href="../" aria-label="the2en.log 홈">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>the2en<span class="brand-dot">.</span>log</span>
+      </a>
+
+      <button class="mobile-menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        MENU <span aria-hidden="true">＋</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+        <a href="../">HOME</a>
+        <a href="../#stories">STORIES</a>
+        <a href="./" aria-current="page">PORTFOLIO</a>
+      </nav>
+
+      <a class="portfolio-header-action" href="https://github.com/the2en" target="_blank" rel="noreferrer">
+        GITHUB PROFILE <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <section class="about section-wrap portfolio-about portfolio-about-top" id="about" aria-labelledby="about-title">
+        <div class="about-card">
+          <div class="profile-stamp" aria-hidden="true">
+            <span>HELLO</span>
+            <strong>:)</strong>
+            <small>FROM SEOUL</small>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">ABOUT THE PERSON BEHIND THE SCREEN</p>
+            <h1 id="about-title">안녕하세요, 저는 <span>Seeun</span>입니다.</h1>
+            <p>
+              관찰한 것을 글로 정리하고, 낯선 도구를 배워 아이디어를 화면에 옮깁니다.
+              완성된 결과뿐 아니라 고민과 시행착오까지 다음 작업의 재료로 남기는 것을 좋아합니다.
+            </p>
+            <div class="about-links">
+              <a href="https://github.com/the2en" target="_blank" rel="noreferrer">GITHUB ↗</a>
+              <a href="../#stories">WRITING ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <aside class="now-playing profile-info-window" aria-label="Seeun 프로필 정보">
+          <div class="mini-window-bar"><span>PROFILE_INFO.TXT</span><i></i></div>
+          <div class="profile-info-content">
+            <dl>
+              <div><dt>NAME</dt><dd>SEEUN KIM</dd></div>
+              <div><dt>BASE</dt><dd>SEOUL, KR</dd></div>
+              <div><dt>INTERESTS</dt><dd>WEB · DATA · AI<br />WRITING · DESIGN</dd></div>
+            </dl>
+            <p>요즘은 이런 것에 마음이 가요</p>
+            <ul>
+              <li><span>01</span> 오래된 웹의 솔직한 화면</li>
+              <li><span>02</span> 잘 정리된 작은 데이터</li>
+              <li><span>03</span> 매일 조금씩 만드는 습관</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <div class="portfolio-divider" aria-hidden="true">
+        <span>CODE</span><i>✦</i><span>DATA</span><i>✦</i><span>IDEAS</span><i>✦</i><span>EXPERIMENTS</span>
+      </div>
+
+      <section class="portfolio-hero" aria-labelledby="portfolio-title">
+        <div class="portfolio-hero-copy">
+          <p class="eyebrow">PORTFOLIO / 2024—2026</p>
+          <h1 id="portfolio-title">THINGS<br />I MADE<span>.</span></h1>
+          <p>
+            낯선 문제를 이해하고, 데이터를 정리하고, 실제로 작동하는 화면과 기능으로
+            옮긴 작업들입니다.
+          </p>
+          <div class="portfolio-hero-links">
+            <a class="pixel-button" href="#projects">VIEW PROJECTS ↓</a>
+            <a class="text-link" href="../#stories">READ THE BLOG →</a>
+          </div>
+        </div>
+
+        <div class="portfolio-timeline-art" aria-label="프로젝트 타임라인">
+          <span class="timeline-star" aria-hidden="true">✦</span>
+          <div class="timeline-window">
+            <div class="timeline-window-bar">
+              <span>PROJECT_TIMELINE.LOG</span>
+              <span aria-hidden="true">— □ ×</span>
+            </div>
+            <div class="timeline-window-body">
+              <p>지금까지 만든 프로젝트</p>
+              <ol class="project-timeline" id="project-timeline"></ol>
+            </div>
+            <div class="timeline-status"><i></i> AUTO-GENERATED FROM PROJECT LIST</div>
+          </div>
+          <span class="timeline-note" aria-hidden="true">KEEP<br />MAKING!</span>
+        </div>
+      </section>
+
+      <section class="portfolio-projects section-wrap" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECTED REPOSITORIES</p>
+            <h2 id="projects-title">Project archive<span>.</span></h2>
+          </div>
+          <p class="section-note">카드의 링크를 누르면 실제 GitHub 저장소나 라이브 프로젝트로 이동합니다.</p>
+        </div>
+
+        <div class="portfolio-project-grid" id="portfolio-project-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="../">the2en.log</a>
+      <p>MADE WITH <span>♥</span>, CURIOSITY &amp; TOO MANY TABS.</p>
+      <button id="back-to-top" type="button">TOP ↑</button>
+    </footer>
+  </body>
+</html>

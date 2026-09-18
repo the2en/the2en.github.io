@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="디자인, 개발, 일상의 작은 발견을 기록하는 the2en의 블로그이자 포트폴리오입니다."
+    />
+    <meta name="theme-color" content="#f8a8cc" />
+    <meta property="og:title" content="the2en.log — write, make, collect" />
+    <meta
+      property="og:description"
+      content="디자인, 개발, 일상의 작은 발견을 기록합니다."
+    />
+    <meta property="og:type" content="website" />
+    <title>the2en.log — write, make, collect</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+    <section class="entry-gate" id="entry-gate" aria-labelledby="gate-title" hidden>
+      <div class="gate-decoration gate-decoration-a" aria-hidden="true">✦</div>
+      <div class="gate-decoration gate-decoration-b" aria-hidden="true">♥</div>
+      <div class="gate-card">
+        <div class="gate-card-bar">
+          <span>WELCOME.TXT</span>
+          <span class="gate-card-controls" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="gate-card-content">
+          <div class="gate-copy">
+            <p class="eyebrow">A PERSONAL ARCHIVE OF</p>
+            <h1 id="gate-title">HELLO<span>.</span><br />WELCOME<span>.</span></h1>
+            <p>디자인과 코드, 일상의 작은 발견을 모아둔<br /> the2en의 인터넷 코너입니다.</p>
+            <button class="pixel-button gate-yes-button" id="enter-button" type="button">
+              YES, LET ME IN <span aria-hidden="true">→</span>
+            </button>
+            <p class="gate-response" id="gate-response" aria-live="polite">CLICK YES TO OPEN THE ARCHIVE</p>
+          </div>
+          <div class="gate-art" aria-hidden="true">
+            <span class="gate-sparkle">✦</span>
+            <div class="gate-mini-window">
+              <div class="gate-mini-bar"><i></i><i></i><i></i></div>
+              <div class="gate-mini-screen">
+                <span>♥</span>
+                <strong>the2en.log</strong>
+                <small>WRITE · MAKE · COLLECT</small>
+              </div>
+            </div>
+            <span class="gate-sticker">COME<br />ON IN!</span>
+          </div>
+        </div>
+        <div class="gate-card-footer"><span>ONLINE</span><span>SEOUL · 2026</span></div>
+      </div>
+    </section>
+
+    <div class="site-shell" id="site-shell">
+      <div class="status-strip" aria-label="사이트 상태">
+        <span><i class="status-light"></i> ONLINE</span>
+        <span class="status-marquee">WELCOME TO MY TINY CORNER OF THE WEB ✦</span>
+        <span id="live-clock">00:00 KST</span>
+      </div>
+
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="the2en.log 홈">
+          <span class="brand-mark" aria-hidden="true">✦</span>
+          <span>the2en<span class="brand-dot">.</span>log</span>
+        </a>
+
+        <button class="mobile-menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+          MENU <span aria-hidden="true">＋</span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <a href="#stories">STORIES</a>
+          <a href="portfolio/">PORTFOLIO</a>
+          <a href="https://github.com/the2en" target="_blank" rel="noreferrer">GITHUB ↗</a>
+        </nav>
+
+        <form class="header-search" id="header-search" role="search">
+          <label class="sr-only" for="search-input">글 키워드 검색</label>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="search-input" name="q" type="search" placeholder="키워드 검색..." autocomplete="off" />
+          <kbd>ENTER</kbd>
+          <div class="search-suggestions" id="search-suggestions" role="listbox" hidden></div>
+        </form>
+      </header>
+
+      <main id="main-content" tabindex="-1">
+        <div id="home-view">
+          <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+              <div class="hero-label"><span>VOL. 01</span><span>SEP 2026</span></div>
+              <p class="eyebrow">A PERSONAL ARCHIVE OF</p>
+              <h1 id="hero-title">
+                WRITE<span class="pink">.</span><br />
+                MAKE<span class="yellow">.</span><br />
+                <span class="outline-word">COLLECT</span><span class="mint">.</span>
+              </h1>
+              <p class="hero-description">
+                디자인과 코드 사이, 좋아하는 것과 새로 배운 것 사이를 기록합니다.
+                천천히 둘러보고 마음에 드는 키워드를 꺼내 보세요.
+              </p>
+              <a class="pixel-button primary-button" href="portfolio/">VIEW PORTFOLIO <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="hero-art" aria-label="파스텔 컬러의 레트로 컴퓨터 일러스트레이션">
+              <div class="sparkle sparkle-a" aria-hidden="true">✦</div>
+              <div class="sparkle sparkle-b" aria-hidden="true">✦</div>
+              <div class="bubble bubble-a" aria-hidden="true"></div>
+              <div class="bubble bubble-b" aria-hidden="true"></div>
+              <div class="computer">
+                <div class="computer-top">
+                  <span class="computer-highlight"></span>
+                  <div class="screen">
+                    <div class="screen-bar"><i></i><i></i><i></i></div>
+                    <div class="screen-copy">
+                      <span class="tiny-heart">♥</span>
+                      <strong>HELLO!</strong>
+                      <small>YOU FOUND ME :)</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="computer-base">
+                  <span class="disk-slot"></span>
+                  <span class="power-light"></span>
+                </div>
+                <div class="keyboard" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                  <i></i>
+                </div>
+              </div>
+              <div class="floating-note note-one" aria-hidden="true">new<br />ideas!</div>
+              <div class="floating-note note-two" aria-hidden="true">♥</div>
+              <div class="hero-sticker" aria-hidden="true">CLICK<br />AROUND!</div>
+            </div>
+          </section>
+
+          <nav class="ticker" aria-label="글 카테고리 빠른 이동">
+            <div class="ticker-track" id="ticker-track"></div>
+          </nav>
+
+          <section class="stories section-wrap" id="stories" aria-labelledby="stories-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">BROWSE THE ARCHIVE</p>
+                <h2 id="stories-title">Recent stories<span>.</span></h2>
+              </div>
+              <p class="section-note">배운 것, 만든 것, 오래 기억하고 싶은 것을 씁니다.</p>
+            </div>
+
+            <div class="filter-row" id="category-filters" role="group" aria-label="글 카테고리 필터"></div>
+
+            <div class="search-result-heading" id="search-result-heading" hidden>
+              <p><span id="result-query"></span> 검색 결과</p>
+              <button id="clear-search" type="button">검색 지우기 ×</button>
+            </div>
+
+            <div class="post-grid" id="post-grid" aria-live="polite"></div>
+            <div class="empty-state" id="empty-state" hidden>
+              <div aria-hidden="true">?</div>
+              <h3>아직 이 키워드의 글은 없어요.</h3>
+              <p>다른 단어로 찾아보거나 전체 글을 구경해 주세요.</p>
+              <button class="pixel-button" id="show-all-button" type="button">SHOW ALL POSTS</button>
+            </div>
+          </section>
+
+        </div>
+
+        <article class="article-view" id="article-view" hidden>
+          <div class="article-toolbar section-wrap">
+            <button class="back-button" id="back-button" type="button">← BACK TO ARCHIVE</button>
+            <button class="share-button" id="share-button" type="button">SHARE LINK ↗</button>
+          </div>
+          <div id="article-content"></div>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <a class="footer-brand" href="./">the2en.log</a>
+        <p>MADE WITH <span>♥</span>, CURIOSITY &amp; TOO MANY TABS.</p>
+        <button id="back-to-top" type="button">TOP ↑</button>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">링크를 복사했어요! ♥</div>
+  </body>
+</html>
