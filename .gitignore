@@ -1,0 +1,27 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors and local tooling
+.vscode/
+.idea/
+.codex/
+.agents/
+*.swp
+*~
+
+# Dependencies and caches
+node_modules/
+__pycache__/
+.cache/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Local secrets
+.env
+.env.*
+!.env.example
