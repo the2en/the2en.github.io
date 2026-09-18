@@ -160,7 +160,7 @@ const dom = {
   clock: document.querySelector("#live-clock"),
 };
 
-const defaultTitle = "the2en.log — write, make, collect";
+const defaultTitle = "theSen.log — write, make, collect";
 let activeCategory = "all";
 let toastTimer;
 
@@ -283,14 +283,14 @@ function renderArticle(post) {
   `;
   dom.homeView.hidden = true;
   dom.articleView.hidden = false;
-  document.title = `${post.title} — the2en.log`;
+  document.title = `${post.title} — theSen.log`;
   window.scrollTo({ top: 0, behavior: "auto" });
 }
 
 function showHome(query = "", shouldScroll = false) {
   dom.homeView.hidden = false;
   dom.articleView.hidden = true;
-  document.title = query ? `${query} 검색 — the2en.log` : defaultTitle;
+  document.title = query ? `${query} 검색 — theSen.log` : defaultTitle;
   dom.searchInput.value = query;
   renderPosts(query);
 

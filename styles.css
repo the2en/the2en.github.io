@@ -1090,6 +1090,7 @@ input:focus-visible {
 .post-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
   gap: 26px;
   max-width: 1240px;
   margin: 0 auto;
@@ -1099,6 +1100,7 @@ input:focus-visible {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 100%;
   min-width: 0;
   overflow: hidden;
   border: var(--line);
@@ -1111,9 +1113,6 @@ input:focus-visible {
   transform: translate(-3px, -3px);
   box-shadow: 9px 9px 0 var(--ink);
 }
-
-.post-card:nth-child(3n + 2) { transform: translateY(14px); }
-.post-card:nth-child(3n + 2):hover { transform: translate(-3px, 11px); }
 
 .post-card-visual {
   position: relative;
@@ -1194,6 +1193,7 @@ input:focus-visible {
 }
 
 .post-card h3 {
+  min-height: 2.5em;
   margin: 0 0 11px;
   font: 900 22px/1.25 var(--display);
   letter-spacing: -0.045em;
@@ -1201,6 +1201,7 @@ input:focus-visible {
 }
 
 .post-card p {
+  min-height: 4.95em;
   margin: 0 0 19px;
   color: #53699a;
   font-size: 13px;
@@ -1211,7 +1212,9 @@ input:focus-visible {
 .post-tags {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   gap: 5px;
+  min-height: 20px;
   margin-bottom: 20px;
 }
 
@@ -1446,9 +1449,10 @@ input:focus-visible {
 .mini-window-bar i { width: 13px; height: 13px; border: 2px solid var(--white); background: var(--yellow); }
 .now-playing > p { margin: 23px 23px 13px; font-weight: 800; }
 .now-playing ul { margin: 0; padding: 0 23px 23px; list-style: none; }
-.now-playing li { padding: 12px 0; border-bottom: 1px dashed var(--ink); font-size: 13px; }
+.now-playing li { display: grid; grid-template-columns: 24px minmax(0, 1fr); align-items: start; gap: 10px; padding: 12px 0; border-bottom: 1px dashed var(--ink); font-size: 13px; }
 .now-playing li:last-child { border: 0; }
-.now-playing li span { display: inline-block; margin-right: 10px; color: var(--white); background: var(--blue); font: 800 10px/1 var(--mono); padding: 4px; }
+.now-playing li span { display: grid; place-items: center; width: 24px; min-height: 19px; margin-top: 1px; color: var(--white); background: var(--blue); font: 800 10px/1 var(--mono); }
+.now-playing li p { margin: 0; line-height: 1.55; word-break: keep-all; }
 
 .portfolio-about-top {
   max-width: none;
@@ -1470,18 +1474,8 @@ input:focus-visible {
 .profile-info-content > p { margin: 14px 23px 4px; font-weight: 900; word-break: keep-all; }
 
 /* Portfolio page */
-.portfolio-header-action {
-  justify-self: end;
-  padding: 10px 12px;
-  color: var(--ink);
-  border: 2px solid var(--ink);
-  background: var(--yellow);
-  box-shadow: 3px 3px 0 var(--ink);
-  font: 900 10px/1 var(--mono);
-  text-decoration: none;
-}
-
-.portfolio-header-action:hover { background: var(--mint); }
+.portfolio-header { grid-template-columns: auto 1fr; }
+.portfolio-header .site-nav { justify-content: flex-end; }
 
 .site-nav a[aria-current="page"]::after { transform: scaleX(1); }
 
@@ -1899,14 +1893,11 @@ input:focus-visible {
   .site-nav a { padding: 15px; border-bottom: 1px dashed #8ba0ce; }
   .site-nav a:last-child { border-bottom: 0; }
   .header-search { justify-self: end; width: min(300px, 100%); }
-  .portfolio-header-action { grid-column: 1 / -1; justify-self: stretch; text-align: center; }
   .hero { grid-template-columns: 1fr 1fr; min-height: 580px; }
   .hero-copy { padding-right: 35px; padding-left: 35px; }
   .hero-art { min-height: 580px; }
   .computer { width: 66%; }
   .post-grid { grid-template-columns: repeat(2, 1fr); }
-  .post-card:nth-child(3n + 2),
-  .post-card:nth-child(3n + 2):hover { transform: none; }
   .work-card:nth-child(1) { grid-column: span 7; }
   .work-card:nth-child(2), .work-card:nth-child(3) { grid-column: span 5; }
   .about { grid-template-columns: 1fr; }
@@ -1940,6 +1931,9 @@ input:focus-visible {
   .section-heading h2 { margin-bottom: 17px; }
   .post-grid { grid-template-columns: 1fr; gap: 24px; }
   .post-card-visual { height: 190px; }
+  .post-card h3,
+  .post-card p,
+  .post-tags { min-height: 0; }
   .work-grid { display: grid; grid-template-columns: 1fr; grid-auto-rows: auto; }
   .work-card:nth-child(n) { grid-column: 1; grid-row: auto; min-height: 250px; }
   .about-card { grid-template-columns: 1fr; padding: 28px 22px; }

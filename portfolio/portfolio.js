@@ -51,7 +51,7 @@ const projects = [
     id: "the2en-log",
     year: "2026",
     number: "PROJECT 04",
-    title: "THE2EN.LOG",
+    title: "THESEN.LOG",
     type: "WEB · ARCHIVE",
     label: "PERSONAL PROJECT",
     description:
